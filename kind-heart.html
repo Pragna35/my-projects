@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kind Heart</title>
+    <!-- favicon icon -->
+     <link rel="shortcut icon" href="./images/donation.svg" type="image/x-icon">
+     <!-- Font family - lobster -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Passion+One:wght@400;700;900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Animation link -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+     <!-- bootstrap cdn link for css -->
+     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+     <!-- bootstrap cdn link for js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
+
+
+   <!-- Bootstrap CSS link -->
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <!-- Bootstrap Js link -->
+   <script src="./js/bootstrap.bundle.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            color: rgb(129, 123, 123);
+        }
+       
+        /* part1 start */
+        .part1{
+            /* border: solid; */ 
+            box-shadow: 0px 0px 20px 10px rgb(89, 89, 90);
+            width: 100%;
+            height: 12%;
+            padding:0px 10px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+       
+        .part1-a i{
+            font-size: 3rem;
+            color: goldenrod;
+        }
+        .part1-a i:hover{
+            animation: slideOutUp 1s linear;
+            transition: 1s;
+        }
+        .part1-a{
+            /* border: solid; */
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+        .part1-a h2{
+            font-family: "Platypi", serif;
+            letter-spacing: 1.5;
+            color: green;
+            margin: 0;
+            /* font-size: 2rem; */
+        }
+        .part1-a span{
+            font-style: italic;
+            font-size: .8rem;
+            font-weight: 800;
+        }
+        
+        .part1-b ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 36px;
+            padding-left: 0;
+            margin: 0;
+        }
+        .part1-b ul li{
+            list-style-type: none;
+          font-weight:bold;
+            font-size: 1.2rem;
+        }
+        .part1-b ul li a{
+            text-decoration: none;
+            color: black;
+        }
+       .part1-b button{
+        border: none;
+       background-color: white;
+        padding: .1rem 1rem;
+        border-radius: 20px;
+        font-weight: bold;
+        transition: 1s;
+       }
+       .part1-b button:hover{
+        border: 1px solid green;
+        transform: scale(1.05);
+        
+       }
+       
+       .part1-b ul li a:hover{
+        color: green;
+        
+       }
+        .fa-bars{
+            font-size: 2rem;
+            /* border: solid;
+            padding:6px 6px;
+            border-radius: 12px;
+            background-color: lightgrey; */
+            display: none;
+        }
+
+        /* part1 end */
+
+        /* part2 start */
+        #slider{
+            margin-top: 5%;
+        }
+
+        /* part2 end */
+
+        /* part3 start */
+        .part3{
+            /* border: solid; */
+            padding: 6% 0%;
+            margin: 6% 0%;
+        }
+        .part3 h1{
+            font-family: "Platypi", serif;
+            /*letter-spacing: 3px; */
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 5%;
+            color: rgb(63, 59, 59);
+        }
+        .part3-a{
+            margin: 0% 8%;
+            display: grid;
+            grid-template-columns: repeat(4,20%);
+            grid-template-rows: repeat(1,120%);
+            justify-content: center;
+           gap: 4%;          
+        }
+        .part3-a img{
+            transition: 1s;
+        }
+        .part3-a h4{
+           margin-top: 6%;
+           font-family: "Platypi", serif;
+           color: green;
+        }
+        .part3-a div{
+            /* border: solid; */
+            /* padding:0px 8px; */
+            text-align: center;
+            transition: 1s;
+        }
+        .part3-a div:hover{
+            border: none;
+            background-color: white;
+            border-radius: 14px;
+            box-shadow: 0px 0px 20px 10px rgb(219, 217, 222);
+            transform: scale(1.05);           
+        }
+        .part3-a div:hover img{
+            transform: scale(0.8);
+        }
+        /* part3 end */
+
+        /* part4 start */
+        .part4{
+            background-color:rgb(209, 209, 218);   
+            padding: 4% 0%;   
+             margin: 4% 0%;   
+                
+        }
+        .part4-main{
+            margin: 0% 4%;
+            display: flex;
+            column-gap: 4%;
+        }
+        .part4-main img{
+            width: 50%;
+            /* height:100% ; */
+            border-radius: 16px;
+        }
+        .part4-a1{
+            /* border: solid; */
+            width: 100%;
+            height: 50%;
+            padding: 4%;
+            margin-bottom: 3%;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0px 0px 20px 0px rgb(161, 158, 167);
+        }
+        .part4-a1 h1{
+            font-size: 3rem;
+            color:  rgb(63, 59, 59);
+            font-weight: 700;
+        }
+        .part4-a2{
+           display: flex;
+           gap: 4%;
+           
+        }
+        .a2-1,.a2-2{
+            /* border: solid; */
+            width: 50%;
+            padding: 4%;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0px 0px 20px 00px rgb(161, 158, 167);
+        }
+        .part4-a1 h4{
+            margin: 0;
+            padding: 2.5% 0%;
+            color: green;
+            font-size:1.6rem;
+            font-weight: 800;
+        }
+       
+        /* part4 end */
+
+
+        /* part5 start */
+
+        .part5{
+            padding: 5% 10%;
+            display: flex;
+            justify-content: center;
+            gap: 4%;
+        }
+        .part5 img{
+            /* border: solid; */
+            width: 30%;
+            border-radius: 16px;
+            box-shadow: 0px 0px 20px 0px rgb(161, 158, 167);
+        }
+        .part5-a{
+            /* border: solid; */
+            width: 60%;          
+            padding:6% 4% 2%;
+        }
+        .part5-a h1{
+            font-family: "Platypi", serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color:  rgb(63, 59, 59);
+        }
+        .part5-a p{
+            font-size: 1.1rem;
+        }
+        .part5-a i{
+            font-size: 2rem;
+            padding: 2% 4% 0% 0%;
+            transition: 1s;
+        }
+        .part5-a i:hover{
+            color: green;
+            transform: scale(1.2);
+        }
+        /* part5 end */
+
+        /* part6 start */
+        .part6{
+            background: linear-gradient(to left,lavender,rgb(161, 158, 167));
+            padding:5% 0% ;  
+            transition:2s ;
+            /* margin: 6% 0%;          */
+        }
+        .part6:hover{
+            background:radial-gradient(circle,lavender,green);
+            transform: scale(1.05)
+            
+        }
+        .part6-main{
+            display: flex;
+            justify-content: center;
+            gap: 10%;
+            align-items: center;
+           margin: 0% 4%;
+        }
+        .part6-a h1{
+            font-size: 3rem;
+            font-weight: 900;
+        }
+        .part6-a:first-child::before{
+            content: url('./images/heart.png')
+        }
+        
+        .part6-b span{
+            font-size: 1.3rem;
+            margin-right: 20px;
+        }
+        .part6-b button{
+            font-size: 18px;
+            padding:10px 26px;
+            border-radius: 24px;
+           color: white;
+           background-color: darkslategray;
+        }
+        /* part6 end */
+
+        /* part7 start */
+        .part7{
+            padding: 1% 0%;
+            margin: 5% 0%;
+        }
+        .part7 h1{
+            font-family: "Platypi", serif;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            padding: 1rem;
+            color: rgb(63, 59, 59);    
+        }
+        .part7-main{
+            margin: 4% 0%;
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+        .part7-a{
+            /* border: solid; */
+            width: 28%;
+            border-radius: 16px;          
+        }
+        .part7-a:hover{
+            box-shadow: 0px 0px 20px 0px rgb(161, 158, 167) ;
+        }
+       
+        .part7-a img{
+            width: 100%;
+            border-radius: 16px;
+        }
+        .part7-b{
+            padding: 1rem 1.5rem 0rem;
+        }
+        .part7-b h4{
+            color: green;
+            font-weight: bold;
+            margin: 2% 0%;
+        }
+        .part7 p{
+            line-height: 1.4;
+            margin: 4% 0%;
+        }
+        .count{
+            padding: 4% 0%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+        }
+        .count b{
+            font-size: 1rem;
+            color: rgb(129, 123, 123);
+           
+        }
+        .card-button{       
+            text-align: center;
+            background-color: darkslategray;
+            color: white;
+            padding: .8rem;
+           border-radius: 14px;
+        }
+        /* part7 end */
+        /* part8 start */
+       .part8{
+        /* border: solid; */
+        /* height: 100vh; */
+        padding: 4% 0%;
+        margin: 4% 0% 6%;
+        background-color:rgb(209, 209, 218) ;
+       }
+       .part8 h1{
+        font-family: "Platypi", serif;
+         color: rgb(63, 59, 59);
+         padding:0% 4% 2%; 
+         font-weight: 800;
+       }
+       .part8-main{
+        /* border: solid; */
+        margin:0% 4%;
+        display: flex;
+        /* gap: 4%; */
+       }
+      
+       .part8-a h2{
+        font-family: "Platypi", serif;
+        margin-bottom: 4%;
+        font-weight: 700;
+       }
+       .part8-a form{
+        /* border: solid; */ 
+        background-color: white;
+        height: 100%;
+        border-radius: 16px;
+        padding:6% 2% 6% 6%;
+        box-shadow: 0px 0px 20px 0px rgb(161, 158, 167) ;
+       }
+       .part8-a input,.part8-a button,.part8-a textarea{
+        padding: 3% 5%;
+        margin: 1.5%;
+        border: none;
+        background-color: lavender;
+        border-radius: .8rem;
+        width: 45%;
+        font-size: 1.1rem;
+       }
+       .part8-a input:focus,.part8-a button:focus,.part8-a textarea:focus,.part11-b input:focus{
+        outline:none;
+        box-shadow: 0px 0px 8px 1px rgb(188, 176, 214) ;
+       }
+       .part8-a button,.part8-a textarea{  
+        width: 93%;
+       }
+       .part8-b{
+        /* border: solid; */
+        text-align: center;
+       }
+       .part8-b1{
+        /* border: solid; */
+        height: 50%;
+       }
+       .part8-b img{
+        width:  50%;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px 0px rgb(161, 158, 167) ;
+       }
+       .part8-b2{
+        /* border: solid; */
+        height: 30%;
+        width: 60%;
+       margin: 0% auto;
+       }
+       .part8-b2 h2{
+        font-family: "Platypi", serif;
+        margin-bottom: 5%;
+        font-weight: 800;
+       }
+       .part8-a input::placeholder,.part8-a textarea::placeholder,.part11-b input::placeholder{
+        font-style: italic;
+        font-weight: bold;
+        color: darkgrey;
+       }
+       
+        /* part8 end */
+
+        /* part11 start */
+        .part11{
+        margin: 6% 0%;
+        }
+        .part11 h1{
+            font-family: "Platypi", serif;
+            margin-left: 6%;
+            margin-bottom: 2%;
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgb(63, 59, 59);
+        }
+       
+         .part11-main{
+            margin:0% 6%;
+            display: flex;
+            gap: 4%;
+        }
+        .part11-a1 img{
+            width: 90%;
+            border-radius: 1rem;
+           margin: 1.8% 0%;
+           box-shadow: 0px 0px 10px  rgb(67, 65, 71) ;
+        }
+        .part11-a1 span{
+       margin-right: 3rem;
+       margin-left: .5rem;
+       font-size: 1.1rem; 
+        }
+        .part11-a1 span i{
+            font-size: 1rem;
+        }
+        .part11-a1 span i:hover{
+            color: green;
+            transform: scale(1.2);
+        }
+        .part11-a1 h3{
+            font-family: "Platypi", serif;
+            font-weight: 700;
+            margin: 2.5% 0%;
+        }
+        .part11-a1 p{
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 3% ;
+        }
+        .part11-b h3{
+            color: green;
+            font-weight: 700;
+            margin-bottom: 4%;
+        }
+        .part11-b input{
+            outline: none;
+            width: 100%;
+            padding: .8rem;
+            border-radius: .5rem;
+            background-color: lavender;
+            border: none;
+            font-size: 1.1rem;
+            margin-bottom: 5%;
+            
+        }
+        .part11-b1{
+            display: flex;
+            gap: 1rem;
+            margin: 2% 0%;
+            margin: 5% 0%;
+        }
+        .part11-b1 img{
+            width: 42%;
+            border-radius: .4rem;
+        }
+        .part11-b1 h2{
+            margin:1rem 0rem;
+        }
+        .part11-b2 span{
+            display: inline-block;
+            padding: .3rem 0rem;
+            font-size: 17px;  
+            transition: 1s;          
+        }
+        .part11-b2 span:hover{
+            color: green;
+            transform: scale(1.2);
+        }
+        .part11-b3 button{
+            display:inline-block;
+            padding: .2rem 1rem;
+            border-radius: 1.2rem;
+            border: 1px solid rgb(208, 205, 205);
+            margin: .5rem;
+            background-color:whitesmoke;
+        }
+        .part11-b3 button:hover{
+          
+           border:1px solid black;
+        }
+        .part11-b4{
+            border: solid;
+            margin: 8% 0%;
+            padding:5% 8%;
+            background-color: lavender;
+            border-radius: .8rem;
+            border: none;
+        }
+       
+        .part11-b4 input{
+            background-color: white;
+           font-size: 1rem;
+           margin: 4% 0%;
+        }
+       .part11-b4 button{
+        width: 100%;
+        margin: 4% 0%;
+        padding: .6rem;
+        border-radius: 2rem;
+        font-size: 1rem;
+        background-color: darkslateblue;
+        color: white;
+        font-weight: 700;
+       }
+        
+        /* part11 end */
+
+        /* part9 start */
+        .part9{
+        padding:2% 8%;
+        background-color: rgb(24, 47, 47);
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        column-gap: 3%;
+        
+      }
+     .part9 h3{
+        font-family: "Platypi", serif;
+        color: white;
+        padding-bottom: 4%;
+      }
+      .part9 span {
+        font-size: 18px;
+        font-weight: 600;
+        color: darkgray;
+        line-height: 2;
+        
+      }
+     .part9-a i:hover{
+        transform: scale(1.2);
+        color: white;
+     }
+      .part9 i{
+        font-size: 18px;
+        font-weight: 600;
+        color: darkgray;
+        margin-right: 10px;
+      }
+     
+      .part9-d input,.part9-d textarea{
+      padding:.6rem ;
+      border-radius: 12px;
+      font-size:1rem;
+      margin-bottom: 1%;   
+      outline: none; 
+     }   
+     .part9-d input:focus,.part9-d textarea:focus{
+        box-shadow: 0px 0px 3px 1px darkgrey;
+     } 
+     .input-btn{
+      padding:.6rem;
+      border-radius: 12px;
+      color: white;
+      background-color: green;
+     font-weight: 600;
+     }
+     #twitter,#facebook,#youtube,#linkedin{
+      color: white;
+      padding: 15px 10px;
+     }
+     #twitter:hover,#facebook:hover,#youtube:hover,#linkedin:hover{
+      color: lavender;
+      transform: scale(1.3);
+     }
+     .part9-c h4{
+        color: white;
+        font-family: "Platypi", serif;
+     }
+    
+   /* part9 end */
+
+   /* part10 start*/
+   .part10{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    background-color: rgb(24, 47, 47) ;
+    border-top: 1px solid darkgray;
+    padding: 1%;
+    font-family: "Platypi", serif;
+   }
+   .part10-b ul {   
+    list-style: none;
+    text-decoration: none;
+     display: flex;
+     gap:3.6rem;
+   }
+   .part10-b ul li a{
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+   
+   }
+   .Part10-a a{
+    font-size: 1.1rem;
+    color: white;
+    
+   }
+   .part10-b ul li a:hover,.Part10-a a:hover{
+    color: lavender;
+    font-weight: 700;
+   }
+   
+     /* part10 end */
+      
+       
+        @media screen and (width<992px){
+            .part1-b li a,.part1-b li button{
+                display:none;
+            }
+            .part1-b .fa-bars{
+                display: block;
+            } 
+           .part3{
+            height: 100vh;
+           }
+            .part3 h1{
+                font-size: 2.8rem;
+             }
+             .part3-a{
+                grid-template-columns: repeat(2,45%);
+                grid-template-rows: repeat(2,60%);
+             } 
+             .part5 img{
+                width: 40%;
+             }
+             .part7 h4{
+                font-size: 1.3rem;
+             }
+             
+        }
+        @media screen and (max-width:767px){
+            .part4-main{
+            
+            flex-direction: column;
+           
+        }
+        .part4-main img{
+            width: 100%;
+            margin-bottom: 4%;
+        }
+        .part6-main{
+            flex-direction: column;   
+        }
+        .part7-main{
+            flex-direction: column;
+            align-items: center;
+        }   
+        .part7-a{        
+            width: 60%;         
+        }
+        .part8-main{
+            /* height: 100vh; */
+            flex-direction: column;     
+        }   
+        .part8-a form{
+            margin-bottom: 6%;
+        }   
+        .part8-b img{
+            margin-bottom: 4%;
+        }
+       .part11-main{      
+         flex-direction: column;       
+        }
+        .part11-a1 img{
+            width: 100%;   
+        }
+        .part9{
+       
+            grid-template-columns: repeat(2,50%);
+            grid-template-rows: repeat(2,50%);
+        }
+     .part10{
+        flex-direction: column;
+        row-gap: 10px;
+     }
+        }
+    </style>
+</head>
+<body>
+    <!-- part1 start -->
+    <div class="part1">
+      <div class="part1-a">
+         <i class="fa-solid fa-hand-holding-dollar"></i>
+          <div>
+              <h2>Kind Heart Charity</h2>
+             <span>NON-PROFIT ORGANIZATION</span>
+          </div>
+    </div>
+    <div class="part1-b">
+        <ul>
+            <li><a href="" style="color: green;">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Causes</a></li>
+            <li><a href="">Volunteer</a></li>
+            <li><a href="">News <i class="fa-solid fa-angle-down"></i></a></li>
+            <li><a href="">Contact</a></li>
+            <li><button><a href="">Donate</a></button></li>
+            <li><i class="fa-solid fa-bars"></i></li>
+        </ul>       
+    </div>  
+    </div>
+    <!-- part1 end -->
+
+<!-- part2-start -->
+<div id="slider" class="carousel slide carousel-fade"  data-bs-ride="carousel" data-bs-touch="true" >
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1000">
+        <img src="./images/kind-heart.jpg" class="d-block w-100" alt="kind" style="height: 100vh;">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./images/k-heart1.jpg" class="d-block w-100" alt="kind" style="height: 100vh;">
+      </div>
+      <div class="carousel-item" >
+        <img src="./images/k-heart2.jpg" class="d-block w-100" alt="kind" style="height: 100vh;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+   
+    <!-- part2-end -->
+
+<!-- part3 start -->
+    <div class="part3">
+        <h1>Welcome to Kind Heart Charity</h1>
+        <div class="part3-a">
+            <div class="box1">
+                <img src="./images/hands.png" alt="hands">
+                <h4>Become a <b >Volunteer</b></h4>
+            </div>
+            <div class="box2">
+                <img src="./images/world.png" alt="world">
+                <h4><b >Caring</b> Earth</h4>
+            </div>
+            <div class="box3">
+                <img src="./images/heart.png" alt="hands">
+                <h4>Make a<b > Donation</b></h4>
+            </div>
+            <div class="box4">
+                <img src="./images/scholarship.png" alt="hands">
+                <h4><b >Scholorship</b> Program</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- part3 end -->
+
+    <!-- part4 start -->
+    <div class="part4">
+        <div class="part4-main">
+            <img src="./images/team.jpg" alt="">
+            <div class="part4-a">
+                <div class="part4-a1">
+                    <h1>Our Story</h1>
+                    <h4>Kind Heart Charity, Non-Profit Organization</h4>
+                    <p>This is a Bootstrap 5.2.2 CSS template for charity organization websites. You can feel free to use it. Please tell your friends about TemplateMo website. Thank you.</p>
+                </div>
+                <div class="part4-a2">
+                    <div class="a2-1">
+                    <h2 style="color: green;font-weight: 800;">Our Mission</h2>
+                    <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
+                    <ul>
+                        <li>Charity Theme</li>
+                        <li>Semantic HTML</li>
+                    </ul>
+                </div>
+                    <div class="a2-2">
+                    <h1 style="color: green;font-weight: 800;">2009</h1>
+                    <span>Founded</span><br>
+                    <h1 style="color: green;font-weight: 800;">120B</h1>
+                    <span>Donations</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- part4 end -->
+
+    <!-- part5 start -->
+
+    <div class="part5">
+        <img src="./images/sandy chan.jpg" alt="sandy chan">
+        <div class="part5-a">
+            <h1>Sandy Chan</h1>
+            <span>Founding Partner</span>
+            <br><br>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional charity theme based</p>
+            <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus</p>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+    </div>
+
+    <!--part5 end  -->
+
+    <!-- part6 start -->
+    <div class="part6">
+        <div class="part6-main">
+        <div class="part6-a">
+            <h1>Make an Impact.</h1>
+            <h1>Save Lives.</h1>
+       </div>
+       <div class="part6-b">
+        <span>Make a Donation</span>
+        <button>Become a Volunteer</button>
+       </div>
+    </div>
+    </div>
+    
+     <!-- part6 end -->
+    
+     <!-- part7 start -->
+    <div class="part7">
+        <h1>Our Causes</h1>
+        <div class="part7-main">
+        <div class="part7-a">
+            <img src="./images/card-img1.jpg" alt="img">
+            <div class="part7-b">
+                <h4>Children Education</h4>
+                <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito</p>
+                <div  class="progress" style="height:5px">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="20" > </div>                                    
+                    </div>
+                  <div class="count">
+                    <div><b>Raised:</b> $18,500</div>
+                    <div><b>Goal:</b> $32,000</div>
+                  </div>
+                  
+            </div>
+            <div class="card-button">Donate now</div>
+        </div>
+
+        <div class="part7-a">
+            <img src="./images/card-img2.jpg" alt="img">
+            <div class="part7-b">
+                <h4>Poverty Development</h4>
+                <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus</p>
+                <div  class="progress" style="height:5px">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="20" > </div>                                    
+                </div>
+                  <div class="count">
+                    <div><b>Raised:</b> $27,600</div>
+                    <div><b>Goal:</b> $60,000</div>
+                  </div>
+                  
+            </div>
+            <div class="card-button">Donate now</div>
+        </div>
+
+        <div class="part7-a">
+            <img src="./images/card-img3.jpg" alt="img">
+            <div class="part7-b">
+                <h4>Supply Drinking Water</h4>
+                <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
+                <div  class="progress" style="height:5px">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="20" > </div>                                    
+                    </div>
+                  <div class="count">
+                    <div><b>Raised:</b> $84,600</div>
+                    <div><b>Goal:</b> $100,000</div>
+                  </div>
+                  
+            </div>
+            <div class="card-button">Donate now</div>
+        </div>
+        
+    </div>  
+    </div>
+    <!-- part7 end -->
+
+    <!-- part8 start -->
+    <div class="part8">
+        <h1>Volunteer</h1>
+        <div class="part8-main">
+            
+          <div class="part8-a">
+            
+            <form action="">
+                <h2>Become a volunteer today</h2>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Upload your CV">
+                <textarea name="comment" id="" placeholder="Comment(Optional)"></textarea>
+                <button style="color: white;font-weight: 700;background-color: darkslateblue;">Submit</button>
+                
+            </form>
+          </div>
+          <div class="part8-b">
+            <div class="part8-b1">
+            <img src="./images/volunteer.jpg" alt="">
+        </div>
+        <div class="part8-b2">
+            <h2>About volunteering</h2>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional charity theme based</p>
+        </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <!-- part8 end -->
+
+    <!-- part11 start -->
+
+    <div class="part11">
+        <h1 >Latest News</h1>
+       <div class="part11-main">
+      
+       <div class="part11-a">
+       <div class="part11-a1">
+           <img src="./images/news-img.jpg" alt="donation">
+           <div>
+              <span><i class="fa-regular fa-calendar"></i> October 12,2024</span> 
+              <span><i class="fa-regular fa-user"></i> By Admin </span>
+              <span><i class="fa-regular fa-message"></i> 35 Comments </span>
+           </div>
+           <h3>Clothing donation to urban area</h3>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis error voluptates perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptate.</p>
+       </div>
+       <div class="part11-a1">
+           <img src="./images/news-img1.jpg" alt="donation">
+           <div>
+              <span><i class="fa-regular fa-calendar"></i> October 17,2026</span> 
+              <span><i class="fa-regular fa-user"></i> By Admin </span>
+              <span><i class="fa-regular fa-message"></i> 75 Comments </span>
+           </div>
+           <h3>Food donation  area</h3>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis error voluptates perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, perspiciatis.</p>
+       </div>
+   </div>
+
+   <div class="part11-b">
+       <input type="search" placeholder="Search">
+       <h3>Recent news</h3>
+       <div class="part11-b1">
+          <img src="./images/recent-img.jpg" alt="food donation">
+          <div>
+           <h4>Food donation area</h4>
+           <span><i class="fa-regular fa-calendar"></i> October 17,2026</span> 
+          </div>
+       </div>
+
+       <div class="part11-b1">
+           <img src="./images/recent-img1.jpg" alt="food donation">
+           <div>
+            <h4>Volunteering Clean</h4>
+            <span><i class="fa-regular fa-calendar"></i> October 17,2026</span> 
+           </div>
+        </div>
+        <h3>  Categories</h3>
+        <div class="part11-b2">
+       <span >Drinking Water <strong >20</strong></span><br>
+       <span>Food Donation <strong >30</strong></span><br>
+       <span>children Education <strong >10</strong></span><br>
+       <span>Poverty Development <strong >15</strong></span><br>
+       <span>Clothing Donation <strong>20</strong></span>
+        </div>
+        <h3 style="margin-top: 2%;">Tags</h3>
+        <div class="part11-b3">
+        <button>Donation</button>
+        <button>Clothing</button>
+        <button>Food</button>
+        <button>Children</button>
+        <button>Education</button>
+        <button>Poverty</button>
+        <button>Clean Water</button>
+       </div>
+
+       <div class="part11-b4">
+           <h3 style="color: darkslateblue;">Newsletter Form</h3>
+           <input type="email" placeholder="Email Address">
+           <button>Subscribe</button>
+       </div>
+   </div>
+
+
+   </div>
+</div>
+
+    <!-- part11 end -->
+
+    <!-- part9 start -->
+
+    <div class="part9">
+        <div class="part9-c">
+            <img src="./images/scholarship.png" alt=""><br><br>
+            <h4>Become a Volunteer <br>and Partner with us</h4>
+        </div>
+        <div class="part9-a">
+          <h3>Get in Touch</h3>
+          <i class="fa-solid fa-location-dot"></i><span class="effect">123 Street, New York, USA</span><br>
+          <i class="fa-solid fa-phone"></i><span class="effect">+01234567890</span><br>
+          <i class="fa-solid fa-envelope"></i><span>mail@domain.com</span><br>
+          <i class="fa-brands fa-twitter " id="twitter"  ></i>
+          <i class="fa-brands fa-facebook-f" id="facebook" ></i>
+          <i class="fa-brands fa-youtube" id="youtube" ></i>
+          <i class="fa-brands fa-linkedin-in "  id="linkedin"></i>
+        </div>
+
+        <div class="part9-b">
+          <h3>Quick Links</h3>
+          <i class="fa-solid fa-angle-right"></i><span>Causes</span><br>
+          <i class="fa-solid fa-angle-right"></i><span>About Us</span><br>
+          <i class="fa-solid fa-angle-right"></i><span>Our Stories</span><br>
+          <i class="fa-solid fa-angle-right"></i><span>Become a Volunteer</span><br>          
+        </div>
+       
+        <div class="part9-d">
+         <h3> Newsletter</h3>
+         <form action="">
+            <!-- <input type="text" placeholder="Name"><br> -->
+          <input type="email" placeholder="Email" ><br>
+          <textarea name="message" id="" placeholder="message" cols="24"></textarea><br>
+          <button type="button" class="input-btn" >Send message</button>
+        </input>
+         </form>
+        </div>     
+      </div>
+
+      <!-- part9 end -->
+
+      <!-- part10 start -->
+      <div class="part10">
+        
+        <div class="Part10-a">
+          <span style="color: darkgray;"><a href="">Kind Heart Charity</a>, All Rights Reserved. Designed By <a href="">Pragna Murkiker</a></span>
+        </div>
+        <div class="part10-b">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Causes</a></li>
+            <li><a href="">Donation</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">FAQ's</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- part10 end -->
+
+
+      
+</body>
+</html>

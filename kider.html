@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kider - project </title>
+    <!-- favicon  -->
+    <link rel="icon" type="image/x-icon" href="./images/kider.svg">
+    <!-- Font family - lobster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animation link -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+         /* .part2{
+           border: solid ;
+           height: 100vh;         
+        }   */
+        /* .part6{
+          border: solid;
+          height: 200vh;
+        } */
+        
+        .part1-a{
+            font-family: "Lobster", sans-serif;
+            color: red;
+           
+        }
+        .part1-b ul{
+           
+            font-family:  "Lobster", sans-serif;
+            display: flex;         
+        }
+       
+        .part1-b ul a{
+            list-style: none;
+           font-size: 20px;
+            margin-right: 50px;
+            text-decoration: none;
+            color: black;
+        }
+        .part1-b ul li:hover{
+            color: red;
+        }
+        .btn{
+            padding: 6px 15px;
+            border-radius: 18px;
+            color:white;
+            background-color: red;
+            border: none;
+            word-spacing: 2px;
+            font-size: 16px;
+        }
+        
+        .part1{
+          /* border: solid; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0px 30px;
+            background-color: white;
+            width: 100%;
+            height: 70px;
+            box-shadow: 0px 0px 5px 3px rgb(73, 70, 70);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .part2{
+          width: 100%;
+            border: solid;
+            height: 100vh;
+        }
+       .content-div h1 {
+            color: white;
+            font-size: 60px;           
+            letter-spacing: 5px;
+            font-family:  "Lobster", sans-serif;
+            /* animation: fadeInLeft 1.2s linear 0.1s; */      
+          }
+          .content-div p{
+            color: white;
+            font-size: 25px;
+            letter-spacing: 1px;
+            /* animation: fadeInRight 1.2s linear 0.1s; */
+        }  
+        .content-div h1:hover{
+          color: red;
+          text-shadow: -9px 3px 6px white;        
+        }
+        
+       .content-div button, .part4 button{
+        padding: 15px 35px;
+        font-size: 15px;
+        border-radius: 25px;
+        border: none;
+        margin: 30px 20px 30px 0px;
+        color: white;
+       }
+       /* .part2 button:hover{
+        animation: slide .5s linear infinite;
+        box-shadow: 0px 0px 10px 5px lavenderblush;
+        transition: 2s;
+       } */
+      
+        @keyframes slide{
+          50%{
+            background: linear-gradient(to left,black,red);
+          }
+          100%{
+            background: linear-gradient( to right,red,black);
+          }
+        }
+        .content-div{
+          width: 76%;
+          padding: 6%;
+        }
+        .part2{
+          height: 100vh;
+        }
+        .part2-div{
+        /* border: solid; */
+        height: 100vh;
+        background-image: url('./images/baby.jpeg');          
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+       }
+       .part3{
+        padding:5% 2%;
+       }
+       .part3-a{
+        /* border: solid; */
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1rem;
+        animation: fadeInUp 1.3s linear 1.5s;
+       }
+       .part3-a h1, .part4 h1,.part5-a1 h1,.part7-a h1{
+        font-family:  "Lobster", sans-serif;
+        font-size: 36px;
+        letter-spacing: 2px;
+        /* text-align: center; */
+        
+       }
+       .part3 p,.part6 p,.part8 p{
+        font-size: 18px;  
+        text-align:center;
+        line-height: 1.3;
+        /* animation: fadeInUp 1.5s linear 2s; */
+       }
+       .part3-b{ 
+        /* border: solid; */
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+       }
+      .fa-bus{
+        font-size: 50px;   
+        color: red;
+      }
+      .icons{
+        /* border: solid; */
+        width:100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: lavenderblush;
+        text-align: center;
+        padding-top: 25px;
+        margin:0 auto ;
+      }
+      .icon-body{
+        /* border: solid; */
+        width:100%;
+        height: 80%;
+        padding: 35px;
+        border-radius: 50%;
+        background-color: lavenderblush;
+      }
+      .part3-b h2{
+        font-family: "Lobster", sans-serif;
+        text-align: center;
+      }
+     .part3-b1{
+        /* border: solid; */
+        width: 20%;
+        animation: fadeInUp 1.5s linear 2.2s;
+
+     }
+     .fa-basketball{
+        font-size: 50px;
+        color: green;
+     }
+     .fa-store{
+        font-size: 50px;
+        color:orange;
+     }
+     .fa-chalkboard-user{
+        font-size: 50px;
+        color: deepskyblue;
+     }
+    
+     .i-b0:hover{
+      font-weight: 600;
+      background: linear-gradient(white,rgb(248, 74, 103));
+     }
+     .i-b1{
+        background-color: honeydew;
+     }
+     .i-b1:hover{
+       font-weight: 600;
+        background:linear-gradient(white,green);
+     }
+     
+      .i-b2{
+        background-color: cornsilk;
+      }
+      .i-b2:hover{
+        font-weight: 600;
+        background: linear-gradient(white,gold);
+      }
+      .i-b3{
+        background-color: lightcyan;
+      }
+      .i-b3:hover{
+        font-weight: 600;
+        background: linear-gradient(white,deepskyblue);
+      }
+      .part4{
+        margin: 2% 3%;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        animation: fadeInUp 1.5s linear 3.7s;
+      }
+      .part4-a{
+        width: 45%;
+        line-height: 1.5;
+        animation: fadeInLeft 1.5s linear 4s;
+      }
+      .part4 p,.part5-a1 p{
+        font-size: 18px;
+        line-height: 1.3;
+      }
+      .part4-b{
+        /* border: solid; */
+        width: 50%;
+        height: 80%;
+        animation: fadeInRight 1.5s linear 4s;
+      }
+      .part4-b1{
+        width: 100%;
+        height: 100%;
+        background-color:rgba(254, 215, 221,0.951);
+        border-radius: 50%;
+        box-shadow: 1px 1px 9px 5px red;
+        animation: zoomIn 1.5s linear 4s;
+      }
+      .part4-b1:hover{
+        background-color: orangered;
+      }
+      .part4-bimg{
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 0px;
+        animation: zoomIn 1.5s linear 4.1s;
+      }
+      .ceo1{       
+        /* border: solid; */
+        width: 30%;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+       gap: 15px;
+      }
+      .ceo-img1{
+        width: 30%;
+        height: 50%; 
+        border-radius: 50%;      
+      }
+      .btn-div{
+        /* border: solid; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .part5{
+        padding: 2% 6%;
+        animation: fadeInUp 1.5s linear 5.8s;
+      }
+      .part5-a{
+        /* border: solid; */
+       background-color:lavenderblush;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        border-radius: 20px;
+      }
+      .part5 img {
+        width: 50%;
+        height: 70%;
+        border-radius: 3%;
+        
+      }
+      .part5-a1{
+        background-color: lavenderblush;
+        width:50% ;
+        /* border: solid; */
+        column-gap: 50px;
+        padding: 50px;
+        border-radius: 20px;
+      }
+      .part5-abtn{
+        width: 95%;
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 15px;
+      color: white;
+      background-color: red;
+      border:none;
+      }
+      .part5-abtn:hover{
+        animation: slide .5s linear infinite;
+        box-shadow: 0px 0px 10px 3px black;
+        transition: 2s;       
+      }
+      
+      .part7{
+        padding: 2% 6%;        
+      }      
+      .part7-a{
+            display: flex;
+            justify-content: space-between;
+            background-color: lavenderblush;
+          width: 100%;
+         height: 70%;
+         border-radius: 15px;
+        animation:fadeInUp 1.5s linear 10s ; 
+        }
+        .part7 img{
+            width: 50%;
+            height: 100%;
+            border-radius: 15px;
+        }
+      
+       .form-div{
+        /* border: solid; */
+        width: 50%;
+        height: 100%;
+        padding:2% 4%;
+       }
+      .part7 input,textarea{
+        padding:20px 30px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 2px solid white;
+        margin: 8px;
+      } 
+          
+      .part7-abtn{
+        width: 95%;
+        padding: 18px;
+        font-size: 16px;
+        border-radius: 15px;
+      color: white;
+      background-color: red;
+      border:none;
+      }
+      .part7-abtn:hover{
+        animation: slide .5s linear infinite;
+        box-shadow: 0px 0px 10px 3px black;
+        transition: 2s;
+      }
+      .part8-a{
+        display: flex;
+        justify-content: center;
+       
+      }
+      #part8-p-h1{
+        animation:fadeInUp 1.5s linear 11.8s ; 
+      }
+      .teacher{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;      
+      }
+      .outer{
+        /* border:solid ;  */
+        width: 250px;
+        height: 250px;
+        background-color: lavenderblush;
+        display: flex;       
+        border-radius: 50%;        
+      }
+      .outer:hover{
+        background-color: red;
+         box-shadow: 0px 0px 10px 2px black;
+      }
+      .inner{
+        /* border:solid; */
+        
+        width: 210px;
+        height: 210px;
+        background-color: white;
+        margin: auto;
+        border-radius: 50%;
+        text-align: center;
+      }   
+      .teacher-div{
+        /* border: solid; */
+        width: 44%;
+        /* height: 40%; */
+        display: flex;
+        align-items: center;
+        animation: fadeInLeft 1.2s linear 12.5s;
+      }
+      
+      .part8-a h1,.square h1{
+        font-family: "Lobster", sans-serif;
+      }
+      .part8-a p{
+        font-size: 20px;   
+      }
+      .fa-facebook,.fa-square-twitter,.fa-square-instagram{
+        font-size: 28px;
+        margin-right: 10px;
+      }
+      .part9{
+        margin:0px 2px;
+        padding:2% 8%;
+        background-color: rgb(24, 47, 47);
+        display: flex;
+        justify-content: space-between;
+        animation: fadeInUp 1.2s linear 13.8s;
+      }
+      .part9 h2{
+        font-family: "Lobster", sans-serif;
+        color: white;
+      }
+      .part9 span {
+        font-size: 18px;
+        font-weight: 600;
+        color: darkgray;
+        line-height: 2;
+      }
+      .part9 i{
+        font-size: 18px;
+        font-weight: 600;
+        color: darkgray;
+        margin-right: 10px;
+      }
+      .part9-c1{
+       
+        display: grid;
+        grid-template-columns: 70px 70px 70px;
+        grid-template-rows: 70px 70px 70px;
+        gap: 5px;
+      }
+      .part9-c1 div{
+        border:5px solid lavenderblush;
+        border-radius: 10px;
+       /* background-color: aqua; */
+      }
+      .item-1{
+        background-image: url('./images/children.jpeg');
+        background-size: cover;
+      }
+      .item-3{
+        background-image: url('./images/color.jpg');
+        background-size:cover;
+       
+      }
+      .item-2{
+        background-image: url('./images/foot-img2.jpg');
+        background-size: cover;
+      }
+      .item-4{
+        background-image: url('./images/little-boy.jpg');
+        background-size: cover;
+      }
+      .item-5{
+        background-image: url('./images/foot-img3.jpg');
+        background-size: cover;
+      }
+      .item-6{
+        background-image: url('./images/foot-img1.jpg');
+        background-size: cover;
+      }
+    .square{
+      width: 98%;
+      height: 250px;
+      /* border: solid; */
+      border-radius: 20px;
+      padding: 10px;
+     background-color: lavenderblush;
+     text-align: center;
+     /* box-shadow: 0px 0px 10px 0px red; */
+    }
+    .btn-div1{
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0px;
+    }
+    .ceo1{       
+        /* border: solid; */
+        width: 35%;
+        height: 35%;
+       display: flex;
+       /* justify-content: flex-end; */
+       align-items: center;
+       gap: 15px;
+      }
+      .ceo-img1{
+        width: 30%;
+        /* height: 40%;  */
+        border-radius: 50%;      
+      }
+      .square-btn{
+        width: 20%;
+        border-radius: 20px;
+        border: none;
+        font-size: 16px;
+        color: white;
+        background-color: red;
+      }
+      .limit{
+        display: flex;
+        justify-content: space-around;
+      }
+      .age{
+        border-top: 3px solid red;
+        width: 100px;
+        text-align: left;
+      }
+      .time{
+        border-top: 3px solid green;
+        width: 100px;
+        text-align: left;
+      }
+      .capacity{
+        border-top: 3px solid orange;
+        width: 100px;
+        text-align: left;
+      }
+      .age-title{
+        font-size: 18px;
+        font-weight: 600;
+        color: orangered;
+        
+        /* text-decoration: overline; */
+      }
+      .age-limit{
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      #part6-p-h1{
+        animation: fadeInUp 1.5s linear 7.5s;
+      }
+      .part6-a{
+        /* border: solid; */
+        width: 100%;
+        padding: 10px;
+        animation: fadeInUp 1.5s linear 8s 1;        
+      }
+      .part6-main{
+        /* border: solid; */
+        display: grid;
+       grid-template-columns: 28% 28% 28%;
+       grid-template-rows: auto auto auto;
+       gap: 25px;
+       justify-content: center;
+       padding: 2%;
+      }
+      .circle{
+        margin-left: 12%;
+      }
+     .square h1:hover{
+      color: red;
+     }
+     .part9-b span:hover{
+      letter-spacing: 1px;
+      color: red;
+      position: relative;
+      z-index: 2;
+      transform: scale(1.2);
+     }
+     .part9-d input{
+      padding: 15px 8px;
+      border-radius: 12px;
+      font-size: 16px;
+     
+     }    
+     .input-btn{
+      padding: 10px;
+      border-radius: 12px;
+      color: white;
+      background-color: red;
+     font-weight: 600;
+     }
+     #twitter,#facebook,#youtube,#linkedin{
+      color: white;
+      padding: 15px 10px;
+
+     }
+     #twitter:hover{
+      color: red;
+      transform: scale(1.3);
+     }
+     #facebook:hover{
+      color: red;
+      transform: scale(1.3);
+     }
+     #youtube:hover{
+      color: red;
+      transform: scale(1.3);
+     }
+     #linkedin:hover{
+      color: red;
+      transform: scale(1.3);
+     }
+   .part10{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(24, 47, 47) ;
+    border-top: 1px solid darkgray;
+    margin: 0px 2px;
+   }
+   .part10-b ul {   
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+   gap: 50px;   
+   }
+   .part10-b ul li a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+   }
+   .part10-b ul li a:hover{
+    color: red;
+   }
+   .Part10-a a{
+    font-size: 18px;
+    color: white;
+   }
+  @keyframes bounce{
+    0%,100%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-50px);
+    }
+  }
+  .part6-a:hover{
+    animation: bounce 2s linear ;
+  }
+  .part3-b1:hover{
+    animation: bounce 2s linear ;
+  }
+    .part1 .fa-book-open-reader:hover{
+      animation: flip 1s linear;
+      transition: 1s;
+    }
+    
+  
+    @media screen and (width<768px) {
+      /* .part1{          
+           width: 100%;
+        } */
+       .part1-b ul a li,.part1-c button{
+        display: none;
+       }
+      
+       .part4{
+       width: 100%;
+       
+       flex-direction: column;
+        
+        
+      }
+      
+    }
+    </style>
+</head>
+<body>
+
+  <!-- part-1 start -->
+    <div class="part1"> 
+      
+       <div class="part1-a">
+        <h1 ><i class="fa-solid fa-book-open-reader"></i> Kider</h1>
+
+       </div>
+       <div class="part1-b">
+          <ul>
+            <a href=""> <li class="item1" style="color:red">Home</li></a>
+           <a href=""><li class="item2">About us</li></a>
+           <a href=""> <li class="item3">Classes</li></a>
+           <a href=""><li class="item4">Pages <i class="fa-solid fa-angle-down"></i>
+            </li></a>
+           <a href=""><li class="item5">Contact us</li></a>
+
+        </ul>
+      </div>
+       <div class="part1-c">
+        <button class="btn">Join us  <i class="fa-solid fa-arrow-right"></i></button>
+       </div>
+    </div>
+
+
+<!-- part-1 end -->
+
+    <div class="part2">
+        <div class="part2-div">
+          <div class="content-div">
+            <h1>Make A Brighter Future <br> For Your Child</h1>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quisquam totam, perspiciatis qui soluta a.</p>
+              <button style="background-color: red;">Learn More</button>
+              <button style="background-color: black;">Our Classes</button>
+         </div>
+        </div>
+    </div>
+
+    <div  >
+      <svg id="wave" style="transform:rotate(180deg); transition: 0.3s;margin:0" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(224.861, 16.061, 16.061, 1)" offset="0%"></stop><stop stop-color="rgba(255, 109.186, 16.774, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,20L10,16.7C20,13,40,7,60,6.7C80,7,100,13,120,21.7C140,30,160,40,180,46.7C200,53,220,57,240,51.7C260,47,280,33,300,31.7C320,30,340,40,360,46.7C380,53,400,57,420,60C440,63,460,67,480,63.3C500,60,520,50,540,43.3C560,37,580,33,600,28.3C620,23,640,17,660,25C680,33,700,57,720,70C740,83,760,87,780,76.7C800,67,820,43,840,36.7C860,30,880,40,900,48.3C920,57,940,63,960,56.7C980,50,1000,30,1020,26.7C1040,23,1060,37,1080,43.3C1100,50,1120,50,1140,51.7C1160,53,1180,57,1200,56.7C1220,57,1240,53,1260,56.7C1280,60,1300,70,1320,75C1340,80,1360,80,1380,66.7C1400,53,1420,27,1430,13.3L1440,0L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+    </div>
+
+
+ <div class="part3">
+ 
+        <div class="part3-a">
+           <h1 style="text-align: center;">School Facilities</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptate mollitia dolores maxime totam quae esse praesentium doloremque possimus! </p>
+        </div>
+        <div class="part3-b">
+            <div class="part3-b1" >
+            <div class="icons i-b0"><i class="fa-solid fa-bus"></i></div>
+            <div class="icon-body i-b0">
+                <h2 style="color: red;">School Bus</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ratione tempore  </p>
+            </div>
+           </div>
+
+       
+        
+        <div class="part3-b1" >
+            <div class="icons i-b1"><i class="fa-solid fa-basketball"></i></div>
+            <div class="icon-body i-b1">
+                <h2 style="color: green;">Playground</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ratione tempore </p>
+            </div>
+        </div>
+        <div class="part3-b1" >
+            <div class="icons i-b2"><i class="fa-solid fa-store"></i></div>
+            <div class="icon-body i-b2">
+                <h2 style="color: orange;">Healthy Canteen</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ratione tempore</p>
+            </div>
+        </div>
+        <div class="part3-b1 " >
+            <div class="icons i-b3"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div class="icon-body i-b3">
+                <h2 style="color: deepskyblue;">Positive Learning</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ratione tempore </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="part4">
+        <div class="part4-a">
+            <h1>Learn More About Our Work And Our Cultural Activities</h1>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+               Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet <br><br>
+               Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. 
+               Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos, ipsum labore duo duo sit no sea diam. 
+               Et dolor et kasd ea. Eirmod diam at dolor est vero nonumy magna.
+            </p>
+            <div class="btn-div">
+            <button style="background-color: red;">Read More</button>
+            
+            <div class="ceo1">
+                 <img class="ceo-img1" src="./images/ceo.jpg" alt="john">
+                  <div>
+                       <span style="color: orangered;font-size: 18px;">John Doe</span><br>
+                     <span style="color: darkgray;">CEO & Founder</span>
+                    </div>
+                 </div>
+               </div>
+        </div>
+        <div class="part4-b">
+            <div class="part4-b1"><img  class="part4-bimg" src="./images/children3.jpeg" alt="chilren"></div>           
+            <!-- <img src="https://blog.globalindianschool.org/hs-fs/hubfs/GMP2pillar2.jpg?width=600&name=GMP2pillar2.jpg" alt="kids"> -->
+        </div>        
+    </div>
+    <div class="part5">
+      <div class="part5-a">
+      <img src="./images/mam-child.jpg" alt="">
+        <div class="part5-a1">
+          <h1>Become A Teacher</h1>
+          <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+          <button class="part5-abtn">Get Started Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="part6">
+      <div class="part3-a" id="part6-p-h1">
+        <h1 style="text-align: center;">School Classes</h1>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptate mollitia dolores maxime totam quae esse praesentium doloremque possimus! </p>
+     </div>
+     <!-- part6-main start -->
+     <div class="part6-main">
+     <div class="part6-a">
+      <div class="circle">
+      <div class="outer" >
+        <div class="inner" style="background-image: url('./images/art.jpg');background-size: cover;">
+          
+      </div>
+    </div>
+     </div>
+     <div class="square">
+      <h1>Art & Drawing</h1>
+      <div class="btn-div1">        
+        <div class="ceo1">
+             <img class="ceo-img1" src="./images/ceo.jpg" alt="john">
+              <div>
+                   <span style="color: orangered;font-size: 18px;line-height: 1.3;">John Doe</span><br>
+                 <span style="color: darkgray;">Teacher</span>
+                </div>
+             </div>
+             <button class="square-btn" style="background-color: red;">$99</button>
+           </div>
+           <div class="limit">
+            <div class="age">
+              <span class="age-title">Age:<br><span class="age-limit">3-5 years</span></span>
+            </div>
+            <div class="time">
+              <span class="age-title" style="color: green;">Time:<br><span  class="age-limit">9-10 AM</span></span>
+            </div>
+            <div class="capacity">
+              <span class="age-title" style="color: orange;">Capacity:<br><span  class="age-limit">3o Kids</span></span>
+            </div>
+           </div>
+     </div>
+    </div>
+     <div class="part6-a">
+      <div class="circle">
+      <div class="outer">
+        <div class="inner" style="background-image: url('./images/color.jpg');background-size: cover;">
+          
+      </div>
+    </div>
+     </div>
+     <div class="square">
+      <h1>Color Management</h1>
+      <div class="btn-div1">        
+        <div class="ceo1">
+             <img class="ceo-img1" src="./images/ceo.jpg" alt="john">
+              <div>
+                   <span style="color: orangered;font-size: 18px;line-height: 1.3;">John Doe</span><br>
+                 <span style="color: darkgray;">Teacher</span>
+                </div>
+             </div>
+             <button class="square-btn" style="background-color: red;">$99</button>
+           </div>
+           <div class="limit">
+            <div class="age">
+              <span class="age-title">Age:<br><span class="age-limit">3-5 years</span></span>
+            </div>
+            <div class="time">
+              <span class="age-title" style="color: green;">Time:<br><span  class="age-limit">9-10 AM</span></span>
+            </div>
+            <div class="capacity">
+              <span class="age-title" style="color: orange;">Capacity:<br><span  class="age-limit">3o Kids</span></span>
+            </div>
+           </div>
+     </div>
+    </div>
+    <div class="part6-a">
+      <div class="circle">
+      <div class="outer">
+        <div class="inner" style="background-image: url('./images/athletic.jpg');background-size: cover;">
+          
+      </div>
+     </div>
+      </div>
+     <div class="square">
+      <h1>Athletic & Dance</h1>
+      <div class="btn-div1">        
+        <div class="ceo1">
+             <img class="ceo-img1" src="./images/ceo.jpg" alt="john">
+              <div>
+                   <span style="color: orangered;font-size: 18px;line-height: 1.3;">John Doe</span><br>
+                 <span style="color: darkgray;">Teacher</span>
+                </div>
+             </div>
+             <button class="square-btn" style="background-color: red;">$99</button>
+           </div>
+           <div class="limit">
+            <div class="age">
+              <span class="age-title">Age:<br><span class="age-limit">3-5 years</span></span>
+            </div>
+            <div class="time">
+              <span class="age-title" style="color: green;">Time:<br><span  class="age-limit">9-10 AM</span></span>
+            </div>
+            <div class="capacity">
+              <span class="age-title" style="color: orange;">Capacity:<br><span  class="age-limit">3o Kids</span></span>
+            </div>
+           </div>
+     </div>
+    </div>
+    <div class="part6-a">
+      <div class="circle">
+      <div class="outer">
+        <div class="inner" style="background-image: url('./images/child-2.jpg');background-size: cover;">
+          
+      </div>
+     </div>
+      </div>
+     <div class="square">
+      <h1>Language & Speaking</h1>
+      <div class="btn-div1">        
+        <div class="ceo1">
+             <img class="ceo-img1" src="./images/ceo.jpg" alt="john">
+              <div>
+                   <span style="color: orangered;font-size: 18px;line-height: 1.3;">John Doe</span><br>
+                 <span style="color: darkgray;">Teacher</span>
+                </div>
+             </div>
+             <button class="square-btn" style="background-color: red;">$99</button>
+           </div>
+           <div class="limit">
+            <div class="age">
+              <span class="age-title">Age:<br><span class="age-limit">3-5 years</span></span>
+            </div>
+            <div class="time">
+              <span class="age-title" style="color: green;">Time:<br><span  class="age-limit">9-10 AM</span></span>
+            </div>
+            <div class="capacity">
+              <span class="age-title" style="color: orange;">Capacity:<br><span  class="age-limit">3o Kids</span></span>
+            </div>
+           </div>
+     </div>
+    </div>
+    <div class="part6-a">
+      <div class="circle">
+      <div class="outer">
+        <div class="inner" style="background-image: url('./images/child-1.jpg');background-size: cover;">
+          
+      </div>
+     </div>
+      </div>
+     <div class="square">
+      <h1>Religion & History</h1>
+      <div class="btn-div1">        
+        <div class="ceo1">
+             <img class="ceo-img1" src="./images/ceo.jpg" alt="john">
+              <div>
+                   <span style="color: orangered;font-size: 18px;line-height: 1.3;">John Doe</span><br>
+                 <span style="color: darkgray;">Teacher</span>
+                </div>
+             </div>
+             <button class="square-btn" style="background-color: red;">$99</button>
+           </div>
+           <div class="limit">
+            <div class="age">
+              <span class="age-title">Age:<br><span class="age-limit">3-5 years</span></span>
+            </div>
+            <div class="time">
+              <span class="age-title" style="color: green;">Time:<br><span  class="age-limit">9-10 AM</span></span>
+            </div>
+            <div class="capacity">
+              <span class="age-title" style="color: orange;">Capacity:<br><span  class="age-limit">3o Kids</span></span>
+            </div>
+           </div>
+     </div>
+    </div>
+    <div class="part6-a">
+      <div class="circle">
+      <div class="outer">
+        <div class="inner" style="background-image: url('./images/girl.jpg');background-size: 220px 220px;">
+          
+      </div>
+     </div>
+      </div>
+     <div class="square">
+      <h1>General Knowledge</h1>
+      <div class="btn-div1">        
+        <div class="ceo1">
+             <img class="ceo-img1" src="./images/ceo.jpg" alt="john">
+              <div>
+                   <span style="color: orangered;font-size: 18px;line-height: 1.3;">John Doe</span><br>
+                 <span style="color: darkgray;">Teacher</span>
+                </div>
+             </div>
+             <button class="square-btn" style="background-color: red;">$99</button>
+           </div>
+           <div class="limit">
+            <div class="age">
+              <span class="age-title">Age:<br><span class="age-limit">3-5 years</span></span>
+            </div>
+            <div class="time">
+              <span class="age-title" style="color: green;">Time:<br><span  class="age-limit">9-10 AM</span></span>
+            </div>
+            <div class="capacity">
+              <span class="age-title" style="color: orange;">Capacity:<br><span  class="age-limit">3o Kids</span></span>
+            </div>
+           </div>
+     </div>
+    </div>
+
+  </div>
+  <!-- part6-main end -->
+</div>
+
+    <div class="part7">
+      <div class="part7-a">
+        <div class="form-div">
+            <form action="">
+                <h1>Make an appointment</h1>
+                <input type="text" placeholder="Gaurdian Name">
+                <input type="text" placeholder="Gaurdian Email">
+                <input type="text" placeholder="child Name">
+                <input type="text" placeholder="Child Age">
+                <textarea name="message" id="" placeholder="Message" style="font-size: 18px;width: 95%;height: 65px;"></textarea>
+                <button class="part7-abtn">Submit </button>
+           </form>               
+        </div>
+        <img src="./images/little-boy.jpg" alt="little-boy">           
+    </div>
+    </div>
+
+    
+    <div class="part8" >
+      <div class="part3-a " id="part8-p-h1">
+        <h1 style="text-align: center;">Popular Teachers</h1>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptate mollitia dolores maxime totam quae esse praesentium doloremque possimus! </p>
+     </div>    
+     <div class="part8-a">
+      <div class="teacher-div">
+      <img class="teacher" src="./images/teacher2.jpeg" alt="teacher1">
+      <div class="outer">
+        <div class="inner">
+          <h1>Full Name</h1>
+          <p>Designation</p>
+          <i class="fa-brands fa-facebook" style="color: red;"></i>
+          <i class="fa-brands fa-square-twitter" style="color: red;"></i>
+          <i class="fa-brands fa-square-instagram" style="color: red;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="teacher-div">
+      <img class="teacher"style="height:430px" src="./images/madam.jpeg" alt="teacher1" >
+      <div class="outer">
+        <div class="inner">
+          <h1>Full Name</h1>
+          <p>Designation</p>
+          <i class="fa-brands fa-facebook" style="color: red;"></i>
+          <i class="fa-brands fa-square-twitter" style="color: red;"></i>
+          <i class="fa-brands fa-square-instagram" style="color: red;"></i>
+        </div>
+      </div>
+    </div>
+     </div>
+     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 140" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 68.147, 8.135, 1)" offset="0%"></stop><stop stop-color="rgba(240.799, 9.042, 9.042, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,28L48,32.7C96,37,192,47,288,60.7C384,75,480,93,576,93.3C672,93,768,75,864,56C960,37,1056,19,1152,16.3C1248,14,1344,28,1440,30.3C1536,33,1632,23,1728,23.3C1824,23,1920,33,2016,32.7C2112,33,2208,23,2304,35C2400,47,2496,79,2592,98C2688,117,2784,121,2880,123.7C2976,126,3072,126,3168,116.7C3264,107,3360,89,3456,74.7C3552,61,3648,51,3744,42C3840,33,3936,23,4032,28C4128,33,4224,51,4320,58.3C4416,65,4512,61,4608,60.7C4704,61,4800,65,4896,58.3C4992,51,5088,33,5184,30.3C5280,28,5376,42,5472,60.7C5568,79,5664,103,5760,93.3C5856,84,5952,42,6048,30.3C6144,19,6240,37,6336,42C6432,47,6528,37,6624,44.3C6720,51,6816,75,6864,86.3L6912,98L6912,140L6864,140C6816,140,6720,140,6624,140C6528,140,6432,140,6336,140C6240,140,6144,140,6048,140C5952,140,5856,140,5760,140C5664,140,5568,140,5472,140C5376,140,5280,140,5184,140C5088,140,4992,140,4896,140C4800,140,4704,140,4608,140C4512,140,4416,140,4320,140C4224,140,4128,140,4032,140C3936,140,3840,140,3744,140C3648,140,3552,140,3456,140C3360,140,3264,140,3168,140C3072,140,2976,140,2880,140C2784,140,2688,140,2592,140C2496,140,2400,140,2304,140C2208,140,2112,140,2016,140C1920,140,1824,140,1728,140C1632,140,1536,140,1440,140C1344,140,1248,140,1152,140C1056,140,960,140,864,140C768,140,672,140,576,140C480,140,384,140,288,140C192,140,96,140,48,140L0,140Z"></path></svg>
+    </div>
+
+
+
+    <div class="part9">
+      <div class="part9-a">
+        <h2>Get in Touch</h2>
+        <i class="fa-solid fa-location-dot"></i><span>123 Street, New York, USA</span><br>
+        <i class="fa-solid fa-phone"></i><span>+01234567890</span><br>
+        <i class="fa-solid fa-envelope"></i><span>mail@domain.com</span><br>
+        <i class="fa-brands fa-twitter " id="twitter"  ></i>
+        <i class="fa-brands fa-facebook-f" id="facebook" ></i>
+        <i class="fa-brands fa-youtube" id="youtube" ></i>
+        <i class="fa-brands fa-linkedin-in "  id="linkedin"></i>
+      </div>
+      <div class="part9-b">
+        <h2>Quick Links</h2>
+        <i class="fa-solid fa-angle-right"></i><span>About Us</span><br>
+        <i class="fa-solid fa-angle-right"></i><span>Contact Us</span><br>
+        <i class="fa-solid fa-angle-right"></i><span>Our Services</span><br>
+        <i class="fa-solid fa-angle-right"></i><span>Privacy Policy</span><br>
+        <i class="fa-solid fa-angle-right"></i><span>Terms & conditions</span>
+
+      </div>
+      <div class="part9-c" >
+        <h2>Photo Gallery</h2>
+        <div class="part9-c1">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+        <div class="item-6"></div>
+      </div>
+      </div>
+      <div class="part9-d">
+       <h2> Newsletter</h2>
+       <span>Dolor amet sit justo amet elitr <br>
+        clita ipsum elitr est.</span>
+       <form action="">
+        <input type="text" placeholder="Your mail" >
+        <button type="button" class="input-btn" >signup</button>
+      </input>
+       </form>
+      </div>     
+    </div>
+    <div class="part10">
+      
+      <div class="Part10-a">
+        <span style="color: darkgray;"><a href="">Your Site Name</a>, All Rights Reserved. Designed. Designed By <a href="">HTML Codex</a></span>
+      </div>
+      <div class="part10-b">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Cookies</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">FAQ's</a></li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
+
+
+
+
